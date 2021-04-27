@@ -1,0 +1,19 @@
+
+<div *ngFor="let p of productDetails">
+      <div class="card mt-4 mb-4">
+        <img class="card-img-top img-fluid" src="{{p.product_img}}" alt="" width="100px" height="200px">
+        <div class="card-body">
+          <h3 class="card-title">Product ID:{{productId}} ProductName: {{p.ProductName  }}</h3>
+          <a href="products/update-Product/{{p.productId}}">Update product</a>
+          <a href="products/delete-Product/{{p.productId}}">Delete product</a>
+          <h4>${{p.price}}</h4>
+          <p class="card-text">{{p.description}}</p>
+           <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+          {{p.rating}}stars
+        </div>
+      </div>
+      <!-- /.card -->
+
+     
+    </div>
+      <!-- /.card -->

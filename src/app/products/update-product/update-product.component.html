@@ -1,0 +1,66 @@
+<p>update-product works!{{productId}}</p>
+
+
+<form #UpdateprodForm="ngForm" (submit)="UpdateExistingProd(UpdateprodForm)">
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="ProductName">Product Name</label>
+        <input type="text" class="form-control" id="ProductName" name="ProductName" value="" [(ngModel)]="prodDetails.ProductName" ngModel>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="CategoryId">Category Id</label>
+        <input type="text" class="form-control" id="CategoryId" name="CategoryId" [(ngModel)]="prodDetails.CategoryId" ngModel>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="Description">Description</label>
+        <input type="text" class="form-control" id="Description" name="description" [(ngModel)]="prodDetails.description" ngModel>
+      </div>
+      <div class="col-md-6">
+        <label for="Rating">Rating</label>
+        <select class="custom-select" id="Rating" name="rating" [(ngModel)]="prodDetails.rating" ngModel>
+          <option selected disabled value="">Choose...</option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+        
+      </div>
+      
+    </div>
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="ProductColor">Product Color</label>
+        <input type="text" class="form-control" id="ProductColor" name="color" [(ngModel)]="prodDetails.color" ngModel>
+      </div>
+        <div class="col-lg-6">
+          <label for="IsAvailable">Is Available</label>
+          <select class="custom-select" id="IsAvailable"  name="is_available" [(ngModel)]="prodDetails.is_available" ngModel>
+            <option selected disabled value="">Choose...</option>
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+        </div>
+      
+    </div>
+    <div class="form-row">
+      <div class="col-lg-6 mb-3">
+        <label for="ProductPrice">Product Price</label>
+        <input type="text" class="form-control" id="ProductPrice" name="price" [(ngModel)]="prodDetails.price" ngModel>
+       </div>
+      <div class="col-lg-6">
+        <label for="Reviews">Reviews</label>
+        <select class="custom-select" id="Reviews" name="reviews" [(ngModel)]="prodDetails.reviews" ngModel>
+          <option selected disabled value="">Choose...</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+    </div>
+    
+    <button class="btn btn-primary mt-4 mb-3" type="submit">Update  Product</button>
+    
+  </form>

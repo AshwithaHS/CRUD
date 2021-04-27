@@ -1,0 +1,134 @@
+{
+  "products": [
+    {
+      "productId": 1,
+      "CategoryId": 1,
+      "ProductName": "casual tshirt",
+      "description": "product description",
+      "rating": 4,
+      "price": 100,
+      "product_img": "http://localhost:4200/assets/images/img1.png",
+      "is_available": true,
+      "color": "red",
+      "reviews": 120,
+      "vendor_name": "seller-1",
+      "waranty": "1"
+    },
+    {
+      "productId": 2,
+      "CategoryId": 2,
+      "ProductName": "part shirts",
+      "description": "product description",
+      "rating": 5,
+      "price": 1020,
+      "product_img": "http://localhost:4200/assets/images/img2.png",
+      "is_available": true,
+      "color": "red",
+      "reviews": 20,
+      "vendor_name": "seller-2",
+      "waranty": "1"
+    },
+    {
+      "productId": 3,
+      "CategoryId": 2,
+      "ProductName": "part shirts1",
+      "description": "product description",
+      "rating": 5,
+      "price": 1020,
+      "product_img": "http://localhost:4200/assets/images/img3.png",
+      "is_available": true,
+      "color": "red",
+      "reviews": 20,
+      "vendor_name": "seller-2",
+      "waranty": "1"
+    },
+    {
+      "productId": 4,
+      "CategoryId": 3,
+      "ProductName": "part shirts",
+      "description": "product description",
+      "rating": 5,
+      "price": 1020,
+      "product_img": "http://localhost:4200/assets/images/img4.png",
+      "is_available": true,
+      "color": "red",
+      "reviews": 20,
+      "vendor_name": "seller-2",
+      "waranty": "1"
+    },
+    {
+      "productId": 5,
+      "CategoryId": 5,
+      "ProductName": "part shirts",
+      "description": "product description",
+      "rating": 5,
+      "price": 1020,
+      "product_img": "http://localhost:4200/assets/images/img5.png",
+      "is_available": true,
+      "color": "red",
+      "reviews": 20,
+      "vendor_name": "seller-2",
+      "waranty": "1"
+    },
+    {
+      "productId": 6,
+      "CategoryId": 4,
+      "ProductName": "part shirts",
+      "description": "product description",
+      "rating": 5,
+      "price": 1020,
+      "product_img": "http://localhost:4200/assets/images/img6.png",
+      "is_available": true,
+      "color": "red",
+      "reviews": 20,
+      "vendor_name": "seller-2",
+      "waranty": "1"
+    },
+    {
+      "id": 15,
+      "CategoryId": "111",
+      "ProductName": "aaaa",
+      "description": "eeeeeeeeeeeee",
+      "rating": "Yes",
+      "price": "aaaaaa",
+      "product_img": "",
+      "is_available": "Yes",
+      "color": "aaaaaaaaa",
+      "reviews": "4"
+    },
+    {
+      "id": 16,
+      "CategoryId": "1",
+      "ProductName": "Ashwitha",
+      "description": "desc",
+      "rating": "Yes",
+      "price": "12345",
+      "product_img": "",
+      "is_available": "Yes",
+      "color": "red",
+      "reviews": "5"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Polo Tshirts"
+    },
+    {
+      "id": 2,
+      "name": "soccor Tshirts"
+    },
+    {
+      "id": 3,
+      "name": "Casual Tshirts"
+    },
+    {
+      "id": 4,
+      "name": "Mens Tshirts"
+    },
+    {
+      "id": 5,
+      "name": "Shoes"
+    }
+  ]
+}

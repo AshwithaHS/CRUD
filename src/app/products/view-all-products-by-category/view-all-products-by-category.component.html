@@ -1,0 +1,20 @@
+
+<h3>showng search result for category {{searchCategory}}</h3>
+<div class="row">
+
+  <div class="col-lg-4 col-md-6 mb-4" *ngFor="let prod of productList">
+    <div class="card h-100">
+      <a href="#"><img class="card-img-top" src="{{prod.product_img}}" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a routerLink="Product/{{prod.productId}}">{{prod.ProductName}}</a>
+        </h4>
+        <h5>{{prod.price | currency}}</h5>
+        <p class="card-text">{{prod.description}}</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">{{prod.rating}} stars</small>
+      </div>
+    </div>
+  </div>
+</div>

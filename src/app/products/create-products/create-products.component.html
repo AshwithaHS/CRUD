@@ -1,0 +1,63 @@
+<form #addprodForm="ngForm" (submit)="addNewProd(addprodForm)">
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="ProductName">Product Name</label>
+        <input type="text" class="form-control" id="ProductName" name="ProductName" value="" [(ngModel)]="ProductName">
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="CategoryId">Category Id</label>
+        <input type="text" class="form-control" id="CategoryId" name="CategoryId" [(ngModel)]="CategoryId">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="Description">Description</label>
+        <input type="text" class="form-control" id="Description" name="Description" [(ngModel)]="Description">
+      </div>
+      <div class="col-md-6">
+        <label for="Rating">Rating</label>
+        <select class="custom-select" id="Rating" name="Rating" [(ngModel)]="Rating">
+          <option selected disabled value="">Choose...</option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+        
+      </div>
+      
+    </div>
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="ProductColor">Product Color</label>
+        <input type="text" class="form-control" id="ProductColor" name="ProductColor" [(ngModel)]="ProductColor">
+      </div>
+        <div class="col-lg-6">
+          <label for="IsAvailable">Is Available</label>
+          <select class="custom-select" id="IsAvailable"  name="IsAvailable" [(ngModel)]="IsAvailable">
+            <option selected disabled value="">Choose...</option>
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+        </div>
+      
+    </div>
+    <div class="form-row">
+      <div class="col-lg-6 mb-3">
+        <label for="ProductPrice">Product Price</label>
+        <input type="text" class="form-control" id="ProductPrice" name="ProductPrice" [(ngModel)]="ProductPrice">
+       </div>
+      <div class="col-lg-6">
+        <label for="Reviews">Reviews</label>
+        <select class="custom-select" id="Reviews" name="Reviews" [(ngModel)]="Reviews">
+          <option selected disabled value="">Choose...</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+    </div>
+    
+    <button class="btn btn-primary mt-4 mb-3" type="submit">Submit form</button>
+    
+  </form>

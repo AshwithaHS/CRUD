@@ -1,0 +1,7 @@
+.navbar-custom{
+    background-color: brown !important;
+}
+
+.nav-item,.navbar-brand, .navbar-nav{
+    color:#ffff  !important;
+}
